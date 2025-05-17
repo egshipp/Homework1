@@ -1,0 +1,45 @@
+---
+title: "Learning About Data Science"
+author: "Elena Shipp"
+format: html
+editor: visual
+---
+
+## Data Science vs. Statistics Q&A
+
+-   Data science is about taking data in whatever form it may be in, in some cases it may be considered clean and perfect while in other cases it must be wrangled significantly. Next, the data scientist must go through an iterative process of transforming, modeling, and visualizing the data until the questions of interest are sufficiently answered.
+
+-   Differences between data scientists and statisticians:
+
+1.  Education level requirements are much more broad for data scientists while statisticians generally require a degree in mathematics or statistics.
+
+2.  Data scientists generally use more exploratory approaches to data analysis while statisticians use science-based methods that are derived from experimental techniques, such as hypothesis testing.
+
+3.  Statisticians are more likely to reside in the world of model building and theoretical methodologies while data scientists focus moreso on real world problems.
+
+## Example R Code and Output Using Iris
+
+The R object y is created using the density function on the petal width variable in the Iris data set.
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+The class, type, and structure of the previously created object, y, are determined using the next code chunk.
+
+```{r}
+class(y)
+
+typeof(y)
+
+str(y)
+```
+
+A plot of the object, y, is generated using the next code chunk. The code in this chunk is hidden.
+
+```{r}
+#| echo: false
+
+plot(y)
+
+```
